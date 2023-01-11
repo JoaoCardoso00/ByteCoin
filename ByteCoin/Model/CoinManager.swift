@@ -50,7 +50,6 @@ struct CoinManager {
         do {
             let decodedData = try decoder.decode(ExchangeRate.self, from: ExchangeData)
             let rate = decodedData.rate
-            print(rate)
             return rate
             
         } catch {
